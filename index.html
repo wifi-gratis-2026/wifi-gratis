@@ -2,26 +2,39 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="UTF-8">
-<title>WiFi Gratis</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WiFi gratis</title>
 <style>
 body {
-  background:#faf8f4;
-  font-family:Arial;
-  text-align:center;
-  padding-top:35vh;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #faf8f4;
+  color: #292929;
+  font-family: Arial, sans-serif;
+  text-align: center;
 }
+.content { padding: 30px; }
+h1 { font-size: 27px; }
+p { font-size: 18px; line-height: 1.5; }
+small { color: #777; }
 </style>
 </head>
 <body>
-<h2>Conectando al WiFi...</h2>
-<p>Espera un momento.</p>
+<div class="content">
+  <h1>Oops, aquí no hay WiFi.</h1>
+  <p>Pero sí tu nuevo mejor descubrimiento.</p>
+  <p><strong>Bienvenida a eme.</strong></p>
+  <small>Redirigiendo a Instagram...</small>
+</div>
 <script>
-setTimeout(() => {
+setTimeout(function() {
   window.location.href =
-    "https://instagram.com/_emepunto_";
-}, 2500);
+    "https://www.instagram.com/_emepunto_/";
+}, 4000);
 </script>
 </body>
 </html>
